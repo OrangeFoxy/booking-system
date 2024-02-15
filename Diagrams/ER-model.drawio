@@ -1,0 +1,83 @@
+<mxfile host="Electron" modified="2024-02-15T07:48:11.983Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="nB8m-8ao9BpyH-Tm6Rx-" version="21.6.8" type="device">
+  <diagram name="Page-1" id="e56a1550-8fbb-45ad-956c-1786394a9013">
+    <mxGraphModel dx="1036" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3Yq0w1HaPNtSkJimv5Wd-7" value="Events" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3Yq0w1HaPNtSkJimv5Wd-8" value="#Id&lt;br&gt;*Name&lt;br&gt;*Type&lt;br&gt;*Close_date&lt;br&gt;*Check_date" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="3Yq0w1HaPNtSkJimv5Wd-7" vertex="1">
+          <mxGeometry y="50" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="3Yq0w1HaPNtSkJimv5Wd-10" value="Bookings" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="280" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3Yq0w1HaPNtSkJimv5Wd-11" value="#Id&lt;br&gt;*Template&lt;br&gt;*Telegram_user&lt;br&gt;*Data&lt;br&gt;*Checked" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="3Yq0w1HaPNtSkJimv5Wd-10" vertex="1">
+          <mxGeometry y="50" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="yhxx6B_C3vYRThANwbvq-1" value="Telegram_users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="760" y="310" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yhxx6B_C3vYRThANwbvq-2" value="#Id&lt;br&gt;*Username" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="yhxx6B_C3vYRThANwbvq-1" vertex="1">
+          <mxGeometry y="50" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yhxx6B_C3vYRThANwbvq-3" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;endSize=16;startSize=16;" parent="1" source="RsG8qJkrO6l-fyUJXBkr-1" target="3Yq0w1HaPNtSkJimv5Wd-7" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-120" y="140" as="sourcePoint" />
+            <mxPoint x="-70" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="30" y="260" />
+              <mxPoint x="20" y="250" />
+              <mxPoint x="270" y="270" />
+              <mxPoint x="10" y="270" />
+              <mxPoint x="-20" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yhxx6B_C3vYRThANwbvq-4" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;endSize=16;startSize=16;" parent="1" source="yhxx6B_C3vYRThANwbvq-1" target="3Yq0w1HaPNtSkJimv5Wd-10" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="680" y="445" as="sourcePoint" />
+            <mxPoint x="800" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-1" value="Types" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="140" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-2" value="#Id&lt;br style=&quot;font-size: 16px;&quot;&gt;*Name" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="RsG8qJkrO6l-fyUJXBkr-1" vertex="1">
+          <mxGeometry y="50" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-3" value="Templates" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="130" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-4" value="#Id&lt;br&gt;*Event&lt;br style=&quot;font-size: 16px;&quot;&gt;*Data_types" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="RsG8qJkrO6l-fyUJXBkr-3" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-5" value="Reports" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="300" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-6" value="#Id&lt;br&gt;*Date_created&lt;br&gt;*Bookings" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=16;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="RsG8qJkrO6l-fyUJXBkr-5" vertex="1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-8" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;endSize=16;startSize=16;" parent="1" source="RsG8qJkrO6l-fyUJXBkr-3" target="3Yq0w1HaPNtSkJimv5Wd-10" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="470" y="250" as="sourcePoint" />
+            <mxPoint x="470" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=none;rounded=0;endSize=16;startSize=16;endFill=0;" parent="1" source="3Yq0w1HaPNtSkJimv5Wd-7" target="RsG8qJkrO6l-fyUJXBkr-3" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="440" as="sourcePoint" />
+            <mxPoint x="400" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RsG8qJkrO6l-fyUJXBkr-12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;endSize=16;startSize=16;startArrow=ERmany;startFill=0;" parent="1" source="3Yq0w1HaPNtSkJimv5Wd-10" target="RsG8qJkrO6l-fyUJXBkr-5" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="690" y="490" as="sourcePoint" />
+            <mxPoint x="770" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
