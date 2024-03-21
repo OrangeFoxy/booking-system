@@ -1,0 +1,26 @@
+SCHEMA_DB = """
+CREATE TABLE IF NOT EXISTS events (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    data_type JSONB,
+    close_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    active BOOLEAN DEFAULT TRUE,
+    max_bookings INT DEFAULT 0,
+    check_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id SERIAL PRIMARY KEY,
+    telegram_id INTEGER,
+    event_id INTEGER NOT NULL,
+    data JSONB,
+    checked BOOLEAN DEFAULT FALSE,
+    active BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (event_id) REFERENCES events (id) ON DELETE CASCADE
+);
+"""
+
+drop = """
+DROP TABLE IF EXISTS bookings;
+DROP TABLE IF EXISTS events;
+"""
